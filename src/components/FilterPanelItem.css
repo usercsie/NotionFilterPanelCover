@@ -1,0 +1,23 @@
+.filter-panel-item {
+    display: flex;
+    padding: 4px 10px;
+    border-radius: 4px;
+    color: var(--clr-label-color);
+    align-items: center;
+
+    --clr-item-hover: #efefef;
+}
+
+.filter-panel-item:hover {
+    background-color: var(--clr-item-hover);
+    cursor: pointer;
+}
+
+.filter-panel-item .label {
+    margin-left: 10px;
+}
+
+.filter-panel-item .icon {
+    font-size: 1.1rem;
+    margin-left: 8px;
+}
