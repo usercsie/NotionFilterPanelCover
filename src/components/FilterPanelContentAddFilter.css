@@ -1,0 +1,18 @@
+.filter-content-add-filter .filter-options {
+    margin: 5px;
+}
+
+.filter-content-add-filter .filter-options .noResults {
+    color: var(--clr-filter-text-placeholder);
+    font-size: 0.8rem;
+    margin: inherit
+}
+
+.filter-content-add-filter .filter-separate {
+    border-bottom: 1px solid var(--clr-filter-separate);
+}
+
+.filter-content-add-filter .filter-advanced {
+    color: var(--clr-filter-text-advanced);
+    margin: 5px 5px 0px 5px
+}

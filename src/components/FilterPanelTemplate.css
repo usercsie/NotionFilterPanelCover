@@ -1,0 +1,40 @@
+.filter-template-body {
+    width: 250px;
+    /* height: 235px; */
+    border: 1px solid var(--clr-filter-border);
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 4px rgba(226, 226, 226, 0.35);
+    position: absolute;
+    margin-top: 5px;
+    padding: 10px 0px 10px 0px;
+    background-color: #fff;
+}
+
+.filter-template-body .body-normal {
+    display: flex;
+    flex-direction: column;
+    /* height: 175px; */
+    color: var(--clr-filter-item-label);
+}
+
+.filter-template-body .input-text {
+    background-color: var(--clr-filter-text-background);
+    border: 1px solid var(--clr-filter-text-border);
+    border-radius: 2px;
+    padding: 2px 6px;
+    margin: 0px 12px;
+    color: inherit;
+}
+
+.filter-template-body .input-text::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: var(--clr-filter-text-placeholder);
+    opacity: 1;
+    /* Firefox */
+}
+
+.filter-template-body .input-text:focus {
+    outline: 2px solid var(--clr-filter-text-focus-outline);
+    border-color: var(--clr-filter-text-focus-border);
+    border-width: 1px;
+}
