@@ -1,6 +1,7 @@
 .filter-panel {
     --clr-filter-panel-background: #fff;
-    --clr-filter-button-color: #93928f;
+    --clr-filter-button-text-color: #93928f;
+    --clr-filter-button-icon-color: #afaeac;
     --clr-filter-button-hover: #efefef;
     --clr-filter-button-active: #dfdfde;
     --clr-filter-border: #e2e2e2;
@@ -12,26 +13,10 @@
     --clr-filter-separate: #ededec;
     --clr-filter-item-label: #37352f;
     --clr-filter-text-advanced: #777672;
+    --clr-filter-button-border: #d1d1d0;
+    --clr-filter-rounded-button-text-color: #777672;
+    --clr-filter-rounded-button-icon-color: #9c9798;
     position: relative;
-}
-
-
-.filter-panel-button {
-    border: none;
-    padding: 3px 10px;
-    color: var(--clr-filter-button-color);
-    background-color: var(--clr-filter-panel-background);
-    display: inline;
-}
-
-.filter-panel-button:hover {
-    cursor: pointer;
-    background-color: var(--clr-filter-button-hover);
-    border-radius: 5px;
-}
-
-.filter-panel-button:active {
-    background-color: var(--clr-filter-button-active);
 }
 
 .filter-panel .filter-options {
@@ -51,4 +36,10 @@
 .filter-panel .filter-advanced {
     color: var(--clr-filter-text-advanced);
     margin: 5px 5px 0px 5px
+}
+
+.filter-panel .filter-panel-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }

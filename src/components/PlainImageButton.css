@@ -1,0 +1,24 @@
+.plain-image-button {
+    display: inline-flex;
+    align-items: center;
+    color: var(--clr-filter-button-text-color);
+    background-color: var(--clr-filter-panel-background);
+    padding: 0px 10px;
+    gap: 5px
+}
+
+.plain-image-button:hover {
+    cursor: pointer;
+    background-color: var(--clr-filter-button-hover);
+    border-radius: 5px;
+}
+
+.plain-image-button:active {
+    background-color: var(--clr-filter-button-active);
+}
+
+.plain-image-button .button-icon {
+    color: var(--clr-filter-button-icon-color)
+}
+
+.plain-image-button .button-text {}

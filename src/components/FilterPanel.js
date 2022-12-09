@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import './FilterPanel.css'
-import { BsType, BsFillPersonFill, BsPlayCircle, BsCalendar3 } from 'react-icons/bs'
+import { BsType, BsFillPersonFill, BsPlayCircle, BsCalendar3, BsPlusLg } from 'react-icons/bs'
 import FilterPanelTemplate from './FilterPanelTemplate'
 import FilterPanelContentAddFilter from './FilterPanelContentAddFilter'
+import RoundedImageButton from './RoundedImageButton'
+import PlainImageButton from './PlainImageButton'
 
 const FilterPanel = () => {
 
@@ -14,6 +16,10 @@ const FilterPanel = () => {
         { label: "Date", icon: <BsCalendar3 /> }
     ]
     const [tagItems, setTagItems] = useState(originalTagItems)
+    const [addedTags, setAddedTags] = useState([
+        { label: "Assign", icon: <BsFillPersonFill /> },
+        { label: "Name", icon: <BsType /> },
+    ]);
 
     const handleButtonClick = (e) => {
         //if (isOpen === false) {
@@ -37,7 +43,13 @@ const FilterPanel = () => {
 
     return (
         <div className='filter-panel'>
-            <div className='filter-panel-button' onClick={handleButtonClick}>+ Add Filter</div>
+
+            <div className="filter-panel-buttons">
+                {
+                    addedTags.map(tag => (<RoundedImageButton key={tag.label} icon={tag.icon} text={tag.label} />))
+                }
+                <PlainImageButton icon={<BsPlusLg />} text={"Add Filter"} onClick={handleButtonClick} />
+            </div>
             {
                 isOpen &&
                 <FilterPanelTemplate placeholder='Filter by...' inputChange={handleSearchInputChange} setIsOpen={setIsOpen}

@@ -1,0 +1,24 @@
+.rounded-image-button {
+    color: var(--clr-filter-rounded-button-text-color);
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--clr-filter-button-border);
+    border-radius: 50px;
+    padding: 0px 10px;
+    gap: 5px
+}
+
+.rounded-image-button:hover {
+    cursor: pointer;
+    background-color: var(--clr-filter-button-hover);
+}
+
+.rounded-image-button:active {
+    background-color: var(--clr-filter-button-active);
+}
+
+.rounded-image-button .button-icon {
+    color: var(--clr-filter-rounded-button-icon-color)
+}
+
+.rounded-image-button .button-text {}
